@@ -1,8 +1,5 @@
-#ER Diagram
- https://dbdiagram.io/d/6a055ee27a923b9472ada143
-
- **Open the application**:
-   Open [http://localhost:3000](http://localhost:3000) in your browser to see the live result.
+**Open ER Diagram**:
+   Open [https://dbdiagram.io/d/6a055ee27a923b9472ada143] in your browser to see the live result.
 
 ---
 
@@ -36,3 +33,8 @@ This happens when multiple records in one table relate to multiple records in an
 
 ### 9. What is the difference between Clustered and Non-Clustered Index?
 - **Clustered Index**: This changes the physical order of the table to match the index (like a phone book sorted alphabetically). You can only have one clustered index per table.
+- **Non-Clustered Index**: This creates a separate list that points to the original data (like the index at the back of a textbook). You can have many non-clustered indexes on a table to speed up searches.
+
+### 10. Explain Database Sharding and Partitioning. When would you use each?
+- **Partitioning**: Splitting a massive table into smaller, more manageable pieces **within the same database server** (e.g., dividing sales data by year). Use this to speed up queries on giant tables on a single server.
+- **Sharding**: Splitting a huge database across **multiple different servers** (e.g., US users on Server A, EU users on Server B). Use this when your database gets so massive that one single physical server can no longer handle the traffic or storage.
