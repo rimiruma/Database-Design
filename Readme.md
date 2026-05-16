@@ -1,3 +1,122 @@
+# 📘 SQL Interview Questions & Answers
+
+This README contains important SQL concepts and interview questions explained in a simple way.
+
+---
+
+## 1. Difference between DELETE, TRUNCATE, DROP
+
+### 🔹 DELETE
+- Deletes data row by row
+- WHERE condition can be used
+- Can be rolled back (if inside a transaction)
+
+### 🔹 TRUNCATE
+- Deletes all rows at once
+- WHERE condition is not allowed
+- Faster than DELETE
+- Rollback is not always possible
+
+### 🔹 DROP
+- Removes the entire table structure
+- Data and schema both are deleted permanently
+
+---
+
+## 2. What is a PRIMARY KEY?
+
+- Uniquely identifies each row in a table
+- Duplicate values are not allowed
+- NULL values are not allowed
+
+---
+
+## 3. PRIMARY KEY vs UNIQUE KEY
+
+### 🔹 PRIMARY KEY
+- Only one per table
+- Does not allow NULL values
+
+### 🔹 UNIQUE KEY
+- Multiple unique keys allowed in a table
+- NULL values may be allowed (depends on DBMS)
+
+---
+
+## 4. What is a FOREIGN KEY?
+
+- A field that references the PRIMARY KEY of another table
+- Creates relationship between two tables
+- Maintains referential integrity
+
+---
+
+## 5. What is JOIN in SQL?
+
+JOIN is used to combine rows from two or more tables based on a related column.
+
+### 🔹 INNER JOIN
+- Returns only matching records from both tables
+
+### 🔹 LEFT JOIN
+- Returns all records from the left table
+- Matching records from the right table (if exists)
+
+---
+
+## 6. What is Normalization?
+
+Normalization is the process of organizing database tables to reduce redundancy and improve data integrity.
+
+### 🔹 1NF (First Normal Form)
+- No duplicate columns
+- Each field contains atomic values
+
+### 🔹 2NF (Second Normal Form)
+- Follows 1NF
+- Removes partial dependency
+
+### 🔹 3NF (Third Normal Form)
+- Follows 2NF
+- Removes transitive dependency
+
+---
+
+## 7. What is Indexing?
+
+Indexing is a technique used to speed up data retrieval in a database.
+
+### Why do we use indexing?
+- Faster search performance
+- Improves query efficiency on large tables
+
+---
+
+## 8. WHERE vs HAVING
+
+### 🔹 WHERE
+- Filters individual rows
+- Used before GROUP BY
+
+### 🔹 HAVING
+- Filters grouped data
+- Used after GROUP BY
+
+---
+
+## 9. What is a Transaction in SQL?
+
+A transaction is a sequence of SQL operations executed as a single unit.
+
+### 🔹 COMMIT
+- Saves changes permanently
+
+### 🔹 ROLLBACK
+- Reverts changes back to previous state
+
+
+
+
 **Open ER Diagram**:
    Open [https://dbdiagram.io/d/6a055ee27a923b9472ada143] in your browser to see the live result.
 
